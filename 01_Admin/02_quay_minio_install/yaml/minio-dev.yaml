@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: minio-dev # Change this value if you want a different namespace name
+  name: minio-store # Change this value if you want a different namespace name
   labels:
-    name: minio-dev # Change this value to match metadata.name
+    name: minio-store # Change this value to match metadata.name
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: minio
-  namespace: minio-dev
+  namespace: minio-store
 spec:
   selector:
     matchLabels:
