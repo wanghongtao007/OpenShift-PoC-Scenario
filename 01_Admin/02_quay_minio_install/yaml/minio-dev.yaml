@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: minio
-        image: quay.io/minio/minio:latest
+        image: quay.io/howang/minio-standard:latest
         command:
         - /bin/bash
         - -c
